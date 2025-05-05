@@ -4,7 +4,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100 p-8 sm:p-20 font-sans">
+    <div className="min-h-screen flex flex-col bg-gray-100 pt-4 sm:pt-8 px-4 sm:px-20 font-sans">
+     
+
       {/* Header */}
       <header className="flex justify-between items-center pb-8">
         <div className="flex items-center gap-4">
@@ -37,11 +39,11 @@ export default function Home() {
             Explore gospel topics, engaging videos, and interactive lessons curated to enrich your faith.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
-            
-          <Link href="/topics">
-  <button className="bg-blue-600 text-white py-2 px-4 rounded">
+
+          <Link className="bg-blue-600 text-white py-2 px-4 rounded  hover:bg-blue-700 transition" href="/topics">
+   
     Browse Topics
-  </button>
+
 </Link>
 
             <Link
